@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MXC Elétrica | Eletricista em Uberaba e Região</title>
+  <meta name="description" content="Precisa de eletricista em Uberaba e região? A MXC Elétrica realiza instalações e manutenções elétricas residenciais, comerciais e industriais, iluminação e instalação de câmeras de segurança. Solicite seu orçamento pelo WhatsApp.">
+  <meta name="theme-color" content="#111111">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --orange: #ff7900;
+      --dark: #111111;
+      --dark2: #191919;
+      --light: #f5f5f5;
+      --gray: #bdbdbd;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--dark);
+      color: #fff;
+      border-bottom: 3px solid var(--orange);
+    }
+
+    .nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      color: white;
+      font-size: 27px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .brand span {
+      color: var(--orange);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: var(--orange);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--orange);
+      color: #111;
+      font-weight: 800;
+      padding: 15px 23px;
+      border-radius: 6px;
+      transition: .2s;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #ff9638;
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      background:
+        radial-gradient(ellipse at 80% 20%, #3b220f 0, transparent 42%),
+        linear-gradient(120deg, #101010, #202020);
+      color: white;
+      padding: 95px 0 100px;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--orange);
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 5.4vw, 61px);
+      line-height: 1.12;
+      margin-bottom: 24px;
+    }
+
+    h1 span {
+      color: var(--orange);
+    }
+
+    .hero p {
+      color: #dedede;
+      font-size: 18px;
+      max-width: 620px;
+      margin-bottom: 30px;
+    }
+
+    .hero-note {
+      color: #c7c7c7;
+      font-size: 13px;
+      margin-top: 18px;
+    }
+
+    section {
+      padding: 76px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 42px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.2;
+      margin-bottom: 14px;
+      color: #171717;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service {
+      padding: 28px;
+      border: 1px solid #e7e7e7;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 7px 24px #00000008;
+    }
+
+    .service-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      background: #fff0e2;
+      color: #e66d00;
+      border-radius: 10px;
+      font-size: 26px;
+      margin-bottom: 18px;
+    }
+
+    .service h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .about h2 {
+      font-size: clamp(28px, 4vw, 39px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .benefits {
+      list-style: none;
+      margin-top: 22px;
+    }
+
+    .benefits li {
+      margin: 12px 0;
+      font-weight: 700;
+    }
+
+    .benefits li::before {
+      content: "✓";
+      color: #e66d00;
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    .about-panel {
+      background: var(--dark);
+      color: white;
+      padding: 36px;
+      border-radius: 12px;
+      border-left: 5px solid var(--orange);
+    }
+
+    .about-panel h3 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .about-panel p {
+      color: #ddd;
+    }
+
+    .area {
+      text-align: center;
+    }
+
+    .area-box {
+      max-width: 800px;
+      margin: auto;
+      padding: 35px;
+      background: #fff7f0;
+      border: 1px solid #ffdfc1;
+      border-radius: 12px;
+    }
+
+    .area-box h3 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .area-box p {
+      color: #555;
+      margin-bottom: 22px;
+    }
+
+    .contact {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: clamp(30px, 4vw, 42px);
+      margin-bottom: 18px;
+    }
+
+    .contact p {
+      color: #ddd;
+      max-width: 620px;
+      margin: 0 auto 28px;
+    }
+
+    .contact .btn {
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background: #090909;
+      color: #bbb;
+      padding: 27px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 10;
+      background: #20bd5a;
+      color: white;
+      font-weight: 800;
+      padding: 14px 18px;
+      border-radius: 50px;
+      box-shadow: 0 5px 20px #0003;
+    }
+
+    .whatsapp-float:hover {
+      background: #159447;
+    }
+
+    @media (max-width: 800px) {
+      .nav {
+        padding: 18px 0;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      section {
+        padding: 58px 0;
+      }
+
+      .whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        padding: 12px 15px;
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "MXC Elétrica",
+    "url": "https://mxceletrica.com.br/",
+    "telephone": "+55 34 99905-4491",
+    "description": "Serviços de instalações e manutenção elétrica residencial, comercial e industrial, iluminação e instalação de câmeras de segurança.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Uberaba",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Minas Gerais"
+      }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Uberaba",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="MXC Elétrica - início">
+        MXC <span>ELÉTRICA</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Menu principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <span class="eyebrow">Soluções elétricas</span>
+        <h1>Precisou de eletricista em <span>Uberaba e região?</span></h1>
+        <p>
+          A MXC Elétrica oferece serviços de instalações e manutenção
+          elétrica para residências, comércios e indústrias, além de
+          iluminação e instalação de câmeras de segurança.
+        </p>
+        <a class="btn" href="https://wa.me/5534999054491?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20MXC%20El%C3%A9trica." target="_blank" rel="noopener">
+          Solicitar orçamento pelo WhatsApp
+        </a>
+        <div class="hero-note">Atendimento em Uberaba e região • Entre em contato para consultar disponibilidade</div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">O que fazemos</span>
+          <h2>Serviços elétricos para sua necessidade</h2>
+          <p>
+            Soluções para instalações, melhorias e manutenção elétrica
+            em diferentes tipos de ambientes.
+          </p>
+        </div>
+
+        <div class="services">
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">⌂</div>
+            <h3>Elétrica residencial</h3>
+            <p>
+              Instalações e manutenção elétrica em casas e apartamentos,
+              tomadas, interruptores, circuitos e pontos de energia.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">⚙</div>
+            <h3>Elétrica comercial e industrial</h3>
+            <p>
+              Serviços elétricos para estabelecimentos comerciais,
+              empresas e ambientes industriais, conforme a necessidade.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">ϟ</div>
+            <h3>Iluminação</h3>
+            <p>
+              Instalação e melhorias de iluminação, luminárias,
+              spots, perfis de LED e outros pontos de luz.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">▦</div>
+            <h3>Câmeras de segurança</h3>
+            <p>
+              Instalação de câmeras e soluções de CFTV para ajudar
+              a monitorar residências, comércios e empresas.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">▤</div>
+            <h3>Quadros e circuitos elétricos</h3>
+            <p>
+              Serviços em quadros de distribuição, disjuntores
+              e circuitos elétricos, de acordo com o projeto.
+            </p>
+          </article>
+
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">🔧</div>
+            <h3>Manutenção elétrica</h3>
+            <p>
+              Verificação e correção de problemas elétricos,
+              além de manutenção e melhorias nas instalações.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">MXC Elétrica</span>
+          <h2>Seu projeto elétrico merece atenção e cuidado</h2>
+          <p>
+            Trabalhamos com serviços elétricos residenciais, comerciais
+            e industriais, buscando soluções adequadas para cada cliente.
+          </p>
+          <p>
+            Também realizamos instalações de câmeras de segurança
+            e serviços de iluminação.
+          </p>
+
+          <ul class="benefits">
+            <li>Atendimento em Uberaba e região</li>
+            <li>Orçamentos pelo WhatsApp</li>
+            <li>Serviços conforme a necessidade do cliente</li>
+          </ul>
+        </div>
+
+        <div class="about-panel">
+          <h3>Vamos conversar sobre seu serviço?</h3>
+          <p>
+            Explique o que você precisa e, se possível, envie fotos
+            ou vídeos pelo WhatsApp para facilitar a avaliação inicial.
+          </p>
+          <br>
+          <a class="btn" href="https://wa.me/5534999054491?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20MXC%20El%C3%A9trica%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+            Falar com a MXC Elétrica
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="area" id="atendimento">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">Onde atendemos</span>
+          <h2>Uberaba e região</h2>
+          <p>
+            Entre em contato para consultar atendimento na sua
+            localização e disponibilidade para o serviço.
+          </p>
+        </div>
+
+        <div class="area-box">
+          <h3>Você está em Uberaba ou região?</h3>
+          <p>
+            Conte onde o serviço será realizado e qual é a sua necessidade.
+            Vamos conversar para avaliar o atendimento e o orçamento.
+          </p>
+          <a class="btn" href="https://wa.me/5534999054491?text=Ol%C3%A1%21%20Estou%20em%20Uberaba%20ou%20regi%C3%A3o%20e%20gostaria%20de%20consultar%20um%20servi%C3%A7o." target="_blank" rel="noopener">
+            Consultar atendimento
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="container">
+        <span class="eyebrow">Fale conosco</span>
+        <h2>Solicite seu orçamento</h2>
+        <p>
+          Precisa de um eletricista ou quer instalar câmeras de segurança?
+          Entre em contato com a MXC Elétrica pelo WhatsApp.
+        </p>
+        <a class="btn" href="https://wa.me/5534999054491?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20com%20a%20MXC%20El%C3%A9trica." target="_blank" rel="noopener">
+          Chamar no WhatsApp: (34) 99905-4491
+        </a>
+        <p style="margin-top:20px; margin-bottom:0">
+          Atendimento em Uberaba e região.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>MXC ELÉTRICA</strong> — Eletricista em Uberaba e região.
+      <br>
+      © <span id="ano"></span> MXC Elétrica. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <a class="whatsapp-float"
+     href="https://wa.me/5534999054491?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento."
+     target="_blank" rel="noopener" aria-label="Solicitar orçamento pelo WhatsApp">
+    WhatsApp ↗
+  </a>
+
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
